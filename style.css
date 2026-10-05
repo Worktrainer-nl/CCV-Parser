@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centreert de container */
+    padding-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.file-upload, .upload-btn {
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.upload-btn {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.file-upload {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.header-amount, .header-product {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header-amount {
+    width: 5%; /* Zet de breedte gelijk aan de breedte van de bedragkolom */
+    padding-left: 20px; /* Zorgt voor wat ruimte aan de linkerkant */
+	font-weight: 700;
+}
+
+.header-product {
+    width: 95%; /* Zet de breedte gelijk aan de breedte van de productkolom */
+    padding-left: 64px; /* Zorgt voor wat ruimte aan de linkerkant */
+	font-weight: 700;
+}
+
+.result-row {
+    display: flex;
+    justify-content: flex-start; /* Aanpassen om elementen naar links uit te lijnen */
+    align-items: center;
+    border-bottom: 1px solid #ddd; /* Voegt een subtiele scheidslijn toe */
+}
+
+.result-row div.amount, .result-row div.product {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; /* Voegt wat ruimte toe tussen de kolommen */
+	margin-left: 40px; /* Voegt wat ruimte toe tussen de kolommen */
+}
+
+.result-row div.amount {
+    width: 5%; /* Zet de breedte gelijk aan de breedte van de bedragkolom */
+}
+
+.result-row div.product {
+    width: 95%; /* Zet de breedte gelijk aan de breedte van de productkolom */
+}
+
+.upload-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-wrapper {
+    margin: 10px 0; /* Voeg zowel boven als onder ruimte toe */
+    align-self: stretch;
+    display: flex;
+    align-items: center; /* Zorgt dat de checkbox verticaal gecentreerd is met de tekst */
+}
+
+.file-upload, .upload-btn, .status-dropdown {
+    margin: 5px;
+}
+
+.status-dropdown {
+    order: 2; /* Zorgt ervoor dat de dropdown rechts wordt weergegeven */
+    margin-left: auto; /* Duwt de dropdown naar rechts */
+}
+
+.status-dropdown {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+.status-dropdown:hover {
+    border-color: #ccc;
+}
+
+.status-dropdown:focus {
+    border-color: #bbb;
+}
+
+.status-filter {
+    display: none; /* Wordt zichtbaar zodra er een bestand is geüpload */
+    margin: 15px 0;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.status-filter-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.status-filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.status-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+

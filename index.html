@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>CCVSHOP XML Parser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CCVSHOP XML Parser</h1>
+		<div class="checkbox-wrapper">
+			<label for="includeBusinesses" class="checkbox-label">
+				<input type="checkbox" id="includeBusinesses" />
+				Bedrijven meenemen in de telling
+			</label>
+		</div>
+        <div class="upload-controls">
+            <input type="file" id="fileUploader" class="file-upload" accept=".xml">
+            <button onclick="uploadFile()" class="upload-btn">Upload Bestand</button>
+            <select id="countryDropdown" class="status-dropdown"></select>
+            <select id="statusDropdown" class="status-dropdown"></select>
+        </div>
+        <div id="statusFilter" class="status-filter"></div>
+        <div id="resultaten-header" class="results-header">
+            <span class="header-amount">AANTAL</span>
+            <span class="header-product">PRODUCT</span>
+        </div>
+        <div id="resultaten" class="results-content"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
